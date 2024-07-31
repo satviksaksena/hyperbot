@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HyperBot</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="start-conversation-container" class="screen">
+    <div id="logo-container">
+      <img src="hyperbotlogo.svg" id="logo" alt="HyperBot Logo">
+    </div>
+    <div id="welcome-text">
+      <p>Welcome to hyperbot!</p>
+      <p>Ready to chat with AI?</p>
+    </div>
+    <div id="illustration-container">
+      <img src="homeillus.svg" id="home-illustration" alt="Illustration">
+    </div>
+    <button id="start-conversation-button">Start Conversation</button>
+  </div>
+
+  <div id="recent-conversations-container" class="screen" style="display: none;">
+    <h2>Recent Conversations</h2>
+    <div id="recent-conversations-list">
+      <p id="no-conversations-message" style="display: none;">No recent conversations are there, start a new conversation by clicking the button below.</p>
+    </div>
+    <button id="start-new-conversation-button">New Conversation</button>
+  </div>
+
+  <div id="chat-container" class="screen" style="display: none;">
+    <div id="chat-header">
+      <div class="header-left">
+        <a href="https://hyperleap.ai/" target="_blank">
+          <img src="icon.png" id="chat-icon" alt="HyperBot Icon">
+        </a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?feature=shared" target="_blank" id="chat-title-link">
+          <span id="chat-title">hyperbot</span>
+        </a>
+      </div>
+      <div class="header-right">
+        <button id="back-to-recent-button">Back</button>
+        <button id="clear-conversation-button">Clear</button>
+      </div>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="input-container">
+      <input type="text" id="user-input" placeholder="type your message...">
+      <button id="send-button">
+        <img src="send2.svg" alt="Send" id="send-icon">
+      </button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
